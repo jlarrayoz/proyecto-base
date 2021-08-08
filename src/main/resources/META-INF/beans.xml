@@ -3,9 +3,9 @@
  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd">
 
-
-<scan>
-	<exclude name="org.jboss.weld.**"/>
-</scan>
+	<!-- Para que no haga scan en los beans de weld ya que solo nos interesa que levante los nuestros -->
+	<scan>
+		<exclude name="org.jboss.weld.**"/>
+	</scan>
 
 </beans>
